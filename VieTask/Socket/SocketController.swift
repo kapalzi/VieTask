@@ -12,7 +12,7 @@ import Socket
 typealias voidSuccessCompletion = ((Result<Void, Error>)->Void)
 typealias stringSuccessCompletion = ((Result<String, Error>)->Void)
 
-class SocketController: SocketApiProvider {
+final class SocketController: SocketApiProvider {
     
     static let shared = SocketController()
     private var configuration = Configuration(ipAddress: "", port: "")

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ReadPresenter: BasePresenter<SocketApiProvider> {
+final class ReadPresenter: BasePresenter<SocketApiProvider> {
     
     func readMessage(completion: @escaping stringSuccessCompletion) {
         

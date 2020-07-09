@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class MenuViewController: UIViewController {
+final class MenuViewController: UIViewController {
 
     @IBAction func disconnectBtnDidTap(_ sender: UIButton) {
         

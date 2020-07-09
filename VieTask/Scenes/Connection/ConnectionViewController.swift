@@ -8,9 +8,9 @@
 
 import UIKit
 
-class ConnectionViewController: BaseViewController {
+final class ConnectionViewController: BaseViewController {
 
-    var presenter: ConnectionPresenter = ConnectionPresenter(api: SocketController.shared)
+    private let presenter: ConnectionPresenter = ConnectionPresenter(api: SocketController.shared)
     @IBOutlet var ipAddressTextField: UITextField!
     @IBOutlet var portTextField: UITextField!
     

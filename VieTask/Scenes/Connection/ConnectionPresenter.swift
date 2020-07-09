@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ConnectionPresenter: BasePresenter<SocketApiProvider> {
+final class ConnectionPresenter: BasePresenter<SocketApiProvider> {
     
     func connect(withIpAddress address: String, andWithPort port: String, completion: @escaping voidSuccessCompletion){
         

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class SendPresenter: BasePresenter<SocketApiProvider> {
+final class SendPresenter: BasePresenter<SocketApiProvider> {
 
     func sendMessage(_ message: String, completion: @escaping stringSuccessCompletion) {
         

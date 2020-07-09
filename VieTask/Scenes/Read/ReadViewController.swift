@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-class ReadViewController: BaseViewController {
+final class ReadViewController: BaseViewController {
     
-    var presenter: ReadPresenter = ReadPresenter(api: SocketController.shared)
+    private let presenter: ReadPresenter = ReadPresenter(api: SocketController.shared)
     @IBOutlet var messageTextView: UITextView!
     
     @IBAction func receiveMessageBtnDidTap(_ sender: UIButton) {

@@ -13,7 +13,7 @@ import RxCocoa
 
 final class SendViewController: BaseViewController {
     
-    var presenter: SendPresenter = SendPresenter(api: SocketController.shared)
+    private let presenter: SendPresenter = SendPresenter(api: SocketController.shared)
     let disposeBag = DisposeBag()
     @IBOutlet var messageTextView: UITextView!
     
