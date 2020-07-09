@@ -53,28 +53,28 @@ class SocketController {
     
     func sendMessage(_ message: String, completion: @escaping stringSuccessCompletion) {
 
-        sendRequest(withSocketFrameType: .write, andWithMessage: message, completion: completion)
+        sendRequest(withRequestType: .write, withResponseType: .write, completion: completion)
     }
     
     func readMessage(completion: @escaping stringSuccessCompletion) {
         
-        sendRequest(withSocketFrameType: .read) { (result) in
+        sendRequest(withRequestType: .read, withResponseType: .read) { (result) in
             switch result {
-            case .success( _):
-                    self.readResponse(forResponseType: .read, completion: completion)
-                case .failure(let error):
+            case .success(let message):
+                completion(.success(message))
+            case .failure(let error):
                     completion(.failure(error))
             }
         }
     }
     
-    private func sendRequest(withSocketFrameType type: SocketFrame.SocketFrameType, andWithMessage message: String = "", completion: @escaping stringSuccessCompletion) {
+    private func sendRequest(withRequestType requestType: SocketFrame.SocketFrameType, withResponseType responseType: SocketFrame.SocketFrameType, andWithMessage message: String = "", completion: @escaping stringSuccessCompletion) {
         
-        let socketFrame = SocketFrame(category: .request, type: type, message: message)
+        let socketFrame = SocketFrame(category: .request, type: requestType, message: message)
         
         do {
             try socket.write(from: socketFrame.frame)
-            readResponse(forResponseType: .write, completion: completion)
+            readResponse(forResponseType: responseType, completion: completion)
         } catch let error {
             DispatchQueue.main.async {
                 completion(.failure(error))
