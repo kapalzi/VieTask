@@ -7,37 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CADF66A0B250E6A8CD600A05 /* Pods_VieTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 181295C80BBCA2F4EFA813CC /* Pods_VieTask.framework */; };
+		E21D2F3E24B66DB300654CC4 /* ReadPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21D2F3D24B66DB300654CC4 /* ReadPresenter.swift */; };
+		E21D2F5524B70BC200654CC4 /* SocketErrorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21D2F5424B70BC200654CC4 /* SocketErrorHelper.swift */; };
+		E21D2F5724B7114B00654CC4 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21D2F5624B7114B00654CC4 /* ActivityViewController.swift */; };
+		E2A163A224B5FCC800357A6A /* SocketController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A163A124B5FCC800357A6A /* SocketController.swift */; };
+		E2A163A524B5FCD900357A6A /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A163A424B5FCD900357A6A /* Configuration.swift */; };
 		E2A8F02224B5F311007B98BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A8F02124B5F311007B98BF /* AppDelegate.swift */; };
 		E2A8F02424B5F311007B98BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A8F02324B5F311007B98BF /* SceneDelegate.swift */; };
-		E2A8F02624B5F311007B98BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A8F02524B5F311007B98BF /* ViewController.swift */; };
+		E2A8F02624B5F311007B98BF /* ConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A8F02524B5F311007B98BF /* ConnectionViewController.swift */; };
 		E2A8F02924B5F311007B98BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A8F02724B5F311007B98BF /* Main.storyboard */; };
 		E2A8F02B24B5F313007B98BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2A8F02A24B5F313007B98BF /* Assets.xcassets */; };
 		E2A8F02E24B5F313007B98BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A8F02C24B5F313007B98BF /* LaunchScreen.storyboard */; };
-		E2A8F03924B5F313007B98BF /* VieTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A8F03824B5F313007B98BF /* VieTaskTests.swift */; };
+		E2A8F04624B5F664007B98BF /* ConnectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A8F04524B5F664007B98BF /* ConnectionPresenter.swift */; };
+		E2EA93E724B6105A00A11E2D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EA93E624B6105A00A11E2D /* MenuViewController.swift */; };
+		E2EA93EB24B61CB900A11E2D /* ReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EA93EA24B61CB900A11E2D /* ReadViewController.swift */; };
+		E2EA93ED24B61CC100A11E2D /* SendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EA93EC24B61CC100A11E2D /* SendViewController.swift */; };
+		E2EA93EF24B61FD500A11E2D /* SendPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EA93EE24B61FD400A11E2D /* SendPresenter.swift */; };
+		E2EA93F124B62F8700A11E2D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EA93F024B62F8700A11E2D /* BaseViewController.swift */; };
+		E2EA93F424B63A3E00A11E2D /* ResponseSocketFrameFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EA93F324B63A3E00A11E2D /* ResponseSocketFrameFactory.swift */; };
+		E2EA93F624B63A5100A11E2D /* SocketFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EA93F524B63A5100A11E2D /* SocketFrame.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		E2A8F03524B5F313007B98BF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E2A8F01624B5F311007B98BF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E2A8F01D24B5F311007B98BF;
-			remoteInfo = VieTask;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		181295C80BBCA2F4EFA813CC /* Pods_VieTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VieTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FFFAD865790C0AAED85AC76 /* Pods-VieTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VieTask.debug.xcconfig"; path = "Target Support Files/Pods-VieTask/Pods-VieTask.debug.xcconfig"; sourceTree = "<group>"; };
+		A747C18DE73F801E44E0EDB5 /* Pods-VieTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VieTask.release.xcconfig"; path = "Target Support Files/Pods-VieTask/Pods-VieTask.release.xcconfig"; sourceTree = "<group>"; };
+		E21D2F3D24B66DB300654CC4 /* ReadPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadPresenter.swift; sourceTree = "<group>"; };
+		E21D2F5424B70BC200654CC4 /* SocketErrorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketErrorHelper.swift; sourceTree = "<group>"; };
+		E21D2F5624B7114B00654CC4 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		E2A163A124B5FCC800357A6A /* SocketController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketController.swift; sourceTree = "<group>"; };
+		E2A163A424B5FCD900357A6A /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		E2A163A624B6043B00357A6A /* Socket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Socket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2A8F01E24B5F311007B98BF /* VieTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VieTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2A8F02124B5F311007B98BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2A8F02324B5F311007B98BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E2A8F02524B5F311007B98BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E2A8F02524B5F311007B98BF /* ConnectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionViewController.swift; sourceTree = "<group>"; };
 		E2A8F02824B5F311007B98BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2A8F02A24B5F313007B98BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2A8F02D24B5F313007B98BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2A8F02F24B5F313007B98BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2A8F03424B5F313007B98BF /* VieTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VieTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2A8F03824B5F313007B98BF /* VieTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VieTaskTests.swift; sourceTree = "<group>"; };
 		E2A8F03A24B5F313007B98BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2A8F04524B5F664007B98BF /* ConnectionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionPresenter.swift; sourceTree = "<group>"; };
+		E2EA93E624B6105A00A11E2D /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		E2EA93EA24B61CB900A11E2D /* ReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadViewController.swift; sourceTree = "<group>"; };
+		E2EA93EC24B61CC100A11E2D /* SendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendViewController.swift; sourceTree = "<group>"; };
+		E2EA93EE24B61FD400A11E2D /* SendPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendPresenter.swift; sourceTree = "<group>"; };
+		E2EA93F024B62F8700A11E2D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E2EA93F324B63A3E00A11E2D /* ResponseSocketFrameFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSocketFrameFactory.swift; sourceTree = "<group>"; };
+		E2EA93F524B63A5100A11E2D /* SocketFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketFrame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,25 +64,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E2A8F03124B5F313007B98BF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				CADF66A0B250E6A8CD600A05 /* Pods_VieTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D3FA96F77CC83EDED00F0D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2A163A624B6043B00357A6A /* Socket.framework */,
+				181295C80BBCA2F4EFA813CC /* Pods_VieTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7CA3E64F5EB390890864F78E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4FFFAD865790C0AAED85AC76 /* Pods-VieTask.debug.xcconfig */,
+				A747C18DE73F801E44E0EDB5 /* Pods-VieTask.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E2A163A324B5FCCD00357A6A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2A163A424B5FCD900357A6A /* Configuration.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E2A8F01524B5F311007B98BF = {
 			isa = PBXGroup;
 			children = (
 				E2A8F02024B5F311007B98BF /* VieTask */,
 				E2A8F03724B5F313007B98BF /* VieTaskTests */,
 				E2A8F01F24B5F311007B98BF /* Products */,
+				7CA3E64F5EB390890864F78E /* Pods */,
+				2D3FA96F77CC83EDED00F0D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,7 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				E2A8F01E24B5F311007B98BF /* VieTask.app */,
-				E2A8F03424B5F313007B98BF /* VieTaskTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,9 +119,11 @@
 		E2A8F02024B5F311007B98BF /* VieTask */ = {
 			isa = PBXGroup;
 			children = (
+				E2EA93F224B63A0600A11E2D /* Socket */,
+				E2A163A324B5FCCD00357A6A /* Model */,
+				E2A8F04324B5F642007B98BF /* Scenes */,
 				E2A8F02124B5F311007B98BF /* AppDelegate.swift */,
 				E2A8F02324B5F311007B98BF /* SceneDelegate.swift */,
-				E2A8F02524B5F311007B98BF /* ViewController.swift */,
 				E2A8F02724B5F311007B98BF /* Main.storyboard */,
 				E2A8F02A24B5F313007B98BF /* Assets.xcassets */,
 				E2A8F02C24B5F313007B98BF /* LaunchScreen.storyboard */,
@@ -99,6 +141,65 @@
 			path = VieTaskTests;
 			sourceTree = "<group>";
 		};
+		E2A8F04324B5F642007B98BF /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E2A8F04424B5F64B007B98BF /* Connection */,
+				E2EA93E524B6104F00A11E2D /* Menu */,
+				E2EA93E924B61C9200A11E2D /* Read */,
+				E2EA93E824B61C8B00A11E2D /* Send */,
+				E2EA93F024B62F8700A11E2D /* BaseViewController.swift */,
+				E21D2F5624B7114B00654CC4 /* ActivityViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E2A8F04424B5F64B007B98BF /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				E2A8F02524B5F311007B98BF /* ConnectionViewController.swift */,
+				E2A8F04524B5F664007B98BF /* ConnectionPresenter.swift */,
+			);
+			path = Connection;
+			sourceTree = "<group>";
+		};
+		E2EA93E524B6104F00A11E2D /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				E2EA93E624B6105A00A11E2D /* MenuViewController.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		E2EA93E824B61C8B00A11E2D /* Send */ = {
+			isa = PBXGroup;
+			children = (
+				E2EA93EC24B61CC100A11E2D /* SendViewController.swift */,
+				E2EA93EE24B61FD400A11E2D /* SendPresenter.swift */,
+			);
+			path = Send;
+			sourceTree = "<group>";
+		};
+		E2EA93E924B61C9200A11E2D /* Read */ = {
+			isa = PBXGroup;
+			children = (
+				E2EA93EA24B61CB900A11E2D /* ReadViewController.swift */,
+				E21D2F3D24B66DB300654CC4 /* ReadPresenter.swift */,
+			);
+			path = Read;
+			sourceTree = "<group>";
+		};
+		E2EA93F224B63A0600A11E2D /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				E2A163A124B5FCC800357A6A /* SocketController.swift */,
+				E2EA93F324B63A3E00A11E2D /* ResponseSocketFrameFactory.swift */,
+				E2EA93F524B63A5100A11E2D /* SocketFrame.swift */,
+				E21D2F5424B70BC200654CC4 /* SocketErrorHelper.swift */,
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2A8F03D24B5F313007B98BF /* Build configuration list for PBXNativeTarget "VieTask" */;
 			buildPhases = (
+				4D0DC0A2C99DD7D8A38BDFCE /* [CP] Check Pods Manifest.lock */,
 				E2A8F01A24B5F311007B98BF /* Sources */,
 				E2A8F01B24B5F311007B98BF /* Frameworks */,
 				E2A8F01C24B5F311007B98BF /* Resources */,
+				39C855BC988AE5A2AF5A67D7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -118,24 +221,6 @@
 			productName = VieTask;
 			productReference = E2A8F01E24B5F311007B98BF /* VieTask.app */;
 			productType = "com.apple.product-type.application";
-		};
-		E2A8F03324B5F313007B98BF /* VieTaskTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E2A8F04024B5F313007B98BF /* Build configuration list for PBXNativeTarget "VieTaskTests" */;
-			buildPhases = (
-				E2A8F03024B5F313007B98BF /* Sources */,
-				E2A8F03124B5F313007B98BF /* Frameworks */,
-				E2A8F03224B5F313007B98BF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E2A8F03624B5F313007B98BF /* PBXTargetDependency */,
-			);
-			name = VieTaskTests;
-			productName = VieTaskTests;
-			productReference = E2A8F03424B5F313007B98BF /* VieTaskTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -149,10 +234,6 @@
 				TargetAttributes = {
 					E2A8F01D24B5F311007B98BF = {
 						CreatedOnToolsVersion = 11.3.1;
-					};
-					E2A8F03324B5F313007B98BF = {
-						CreatedOnToolsVersion = 11.3.1;
-						TestTargetID = E2A8F01D24B5F311007B98BF;
 					};
 				};
 			};
@@ -170,7 +251,6 @@
 			projectRoot = "";
 			targets = (
 				E2A8F01D24B5F311007B98BF /* VieTask */,
-				E2A8F03324B5F313007B98BF /* VieTaskTests */,
 			);
 		};
 /* End PBXProject section */
@@ -186,43 +266,86 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E2A8F03224B5F313007B98BF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39C855BC988AE5A2AF5A67D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VieTask/Pods-VieTask-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BlueSocket/Socket.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Socket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VieTask/Pods-VieTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
-/* End PBXResourcesBuildPhase section */
+		4D0DC0A2C99DD7D8A38BDFCE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VieTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E2A8F01A24B5F311007B98BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2A8F02624B5F311007B98BF /* ViewController.swift in Sources */,
+				E2A8F04624B5F664007B98BF /* ConnectionPresenter.swift in Sources */,
+				E2A163A524B5FCD900357A6A /* Configuration.swift in Sources */,
+				E21D2F3E24B66DB300654CC4 /* ReadPresenter.swift in Sources */,
+				E21D2F5724B7114B00654CC4 /* ActivityViewController.swift in Sources */,
+				E2EA93F124B62F8700A11E2D /* BaseViewController.swift in Sources */,
+				E2EA93ED24B61CC100A11E2D /* SendViewController.swift in Sources */,
+				E2A8F02624B5F311007B98BF /* ConnectionViewController.swift in Sources */,
+				E2EA93F424B63A3E00A11E2D /* ResponseSocketFrameFactory.swift in Sources */,
+				E2EA93EF24B61FD500A11E2D /* SendPresenter.swift in Sources */,
+				E2EA93E724B6105A00A11E2D /* MenuViewController.swift in Sources */,
+				E21D2F5524B70BC200654CC4 /* SocketErrorHelper.swift in Sources */,
 				E2A8F02224B5F311007B98BF /* AppDelegate.swift in Sources */,
 				E2A8F02424B5F311007B98BF /* SceneDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E2A8F03024B5F313007B98BF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E2A8F03924B5F313007B98BF /* VieTaskTests.swift in Sources */,
+				E2EA93F624B63A5100A11E2D /* SocketFrame.swift in Sources */,
+				E2EA93EB24B61CB900A11E2D /* ReadViewController.swift in Sources */,
+				E2A163A224B5FCC800357A6A /* SocketController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E2A8F03624B5F313007B98BF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E2A8F01D24B5F311007B98BF /* VieTask */;
-			targetProxy = E2A8F03524B5F313007B98BF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E2A8F02724B5F311007B98BF /* Main.storyboard */ = {
@@ -360,6 +483,7 @@
 		};
 		E2A8F03E24B5F313007B98BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FFFAD865790C0AAED85AC76 /* Pods-VieTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -378,6 +502,7 @@
 		};
 		E2A8F03F24B5F313007B98BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A747C18DE73F801E44E0EDB5 /* Pods-VieTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -391,50 +516,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		E2A8F04124B5F313007B98BF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W2457BUSA4;
-				INFOPLIST_FILE = VieTaskTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = pl.kapala.VieTaskTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VieTask.app/VieTask";
-			};
-			name = Debug;
-		};
-		E2A8F04224B5F313007B98BF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W2457BUSA4;
-				INFOPLIST_FILE = VieTaskTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = pl.kapala.VieTaskTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VieTask.app/VieTask";
 			};
 			name = Release;
 		};
@@ -455,15 +536,6 @@
 			buildConfigurations = (
 				E2A8F03E24B5F313007B98BF /* Debug */,
 				E2A8F03F24B5F313007B98BF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E2A8F04024B5F313007B98BF /* Build configuration list for PBXNativeTarget "VieTaskTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E2A8F04124B5F313007B98BF /* Debug */,
-				E2A8F04224B5F313007B98BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
