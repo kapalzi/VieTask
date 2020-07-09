@@ -7,3 +7,8 @@ target 'VieTask' do
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
 end
+
+target 'VieTaskTests' do
+  pod 'Quick'
+  pod 'Nimble'
+end

@@ -8,20 +8,20 @@
 
 import Foundation
 
-class ConnectionPresenter {
+class ConnectionPresenter: BasePresenter<SocketApiProvider> {
     
     func connect(withIpAddress address: String, andWithPort port: String, completion: @escaping voidSuccessCompletion){
         
         DispatchQueue.global().async {
             let configuration = Configuration(ipAddress: address, port: port)
-            SocketController.shared.setConfiguaration(configuration)
-            SocketController.shared.connect(completion: completion)
+            self.api.setConfiguaration(configuration)
+            self.api.connect(completion: completion)
         }
     }
     
     func disconnect() {
         
-        SocketController.shared.disconnect()
+        api.disconnect()
     }
     
 }

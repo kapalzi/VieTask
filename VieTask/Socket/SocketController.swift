@@ -12,7 +12,7 @@ import Socket
 typealias voidSuccessCompletion = ((Result<Void, Error>)->Void)
 typealias stringSuccessCompletion = ((Result<String, Error>)->Void)
 
-class SocketController {
+class SocketController: SocketApiProvider {
     
     static let shared = SocketController()
     private var configuration = Configuration(ipAddress: "", port: "")
@@ -93,12 +93,12 @@ class SocketController {
             
             if bytes > 0 {
                 
-                let responseFactory = ResponseSocketFrameFactory(responseType: type)
+                let responseMessage = ResponseMessageParser(responseType: type)
                 
-                switch responseFactory.createFromFrame(data) {
-                case .success(let socketFrame):
+                switch responseMessage.messageFromFrame(data) {
+                case .success(let message):
                     DispatchQueue.main.async {
-                        completion(.success(socketFrame.message))
+                        completion(.success(message))
                     }
                 case .failure(let error):
                     DispatchQueue.main.async {

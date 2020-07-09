@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class MenuViewController: UIViewController {
-    
+
     @IBAction func disconnectBtnDidTap(_ sender: UIButton) {
         
         self.dismiss(animated: true, completion: nil)

@@ -13,19 +13,18 @@ import RxCocoa
 
 final class SendViewController: BaseViewController {
     
-    var presenter: SendPresenter!
+    var presenter: SendPresenter = SendPresenter(api: SocketController.shared)
     let disposeBag = DisposeBag()
     @IBOutlet var messageTextView: UITextView!
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        self.presenter = SendPresenter()
         limitTextView()
     }
     
     private func limitTextView() {
-        messageTextView.rx.text.subscribe {
+        messageTextView.rx.text.subscribe { [unowned self] in
             if let element = $0.element, let text = element {
                 self.messageTextView.text = String(text.prefix(255))
             }

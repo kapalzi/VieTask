@@ -10,15 +10,9 @@ import UIKit
 
 class ConnectionViewController: BaseViewController {
 
-    var presenter: ConnectionPresenter!
+    var presenter: ConnectionPresenter = ConnectionPresenter(api: SocketController.shared)
     @IBOutlet var ipAddressTextField: UITextField!
     @IBOutlet var portTextField: UITextField!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        presenter = ConnectionPresenter()
-    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -30,7 +24,7 @@ class ConnectionViewController: BaseViewController {
         
         let activityView = ActivityViewController.showActivity(inView: self.view)
         
-        presenter.connect(withIpAddress: ipAddressTextField.text!, andWithPort: portTextField.text!) { (result) in
+        presenter.connect(withIpAddress: ipAddressTextField.text!, andWithPort: portTextField.text!) { [unowned self] (result) in
             activityView.hide(forView: self.view)
             switch result {
             case .success:

@@ -28,7 +28,6 @@ class ActivityViewController: UIViewController {
         
         self.view.frame = view.bounds
         self.indicatorView.startAnimating()
-        UIApplication.shared.isNetworkActivityIndicatorVisible = true
     }
     
     func hide(forView view:UIView) {
@@ -37,8 +36,4 @@ class ActivityViewController: UIViewController {
         self.view.removeFromSuperview()
         view.isUserInteractionEnabled = true
     }
-    
-    
-    
-    
 }

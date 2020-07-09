@@ -8,12 +8,12 @@
 
 import Foundation
 
-class SendPresenter {
-    
+class SendPresenter: BasePresenter<SocketApiProvider> {
+
     func sendMessage(_ message: String, completion: @escaping stringSuccessCompletion) {
         
         DispatchQueue.global().async {
-            SocketController.shared.sendMessage(message, completion: completion)
+            self.api.sendMessage(message, completion: completion)
         }
     }
 }

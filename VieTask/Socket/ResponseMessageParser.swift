@@ -1,5 +1,5 @@
 //
-//  ResponseSocketFrameFactory.swift
+//  ResponseMessageParser.swift
 //  VieTask
 //
 //  Created by Krzysztof Kapała on 08/07/2020.
@@ -8,11 +8,11 @@
 
 import Foundation
 
-struct ResponseSocketFrameFactory {
+struct ResponseMessageParser {
     
     let responseType: SocketFrame.SocketFrameType
     
-    func createFromFrame(_ frame: Data) -> Result<SocketFrame, SocketFrameError> {
+    func messageFromFrame(_ frame: Data) -> Result<String, SocketFrameError> {
         
         guard let text = String(bytes: frame, encoding: .ascii) else { return .failure(.invalidFrame) }
         
@@ -20,7 +20,7 @@ struct ResponseSocketFrameFactory {
         case (true, true):
             let message = String(text.dropFirst(2))
             let socketFrame = SocketFrame(category: .response, type: .read, message: message)
-            return .success(socketFrame)
+            return .success(socketFrame.message)
         case (false, true):
             return .failure(.invalidCategory)
         case (true, false):
@@ -58,13 +58,7 @@ struct ResponseSocketFrameFactory {
                 return false
             }
         case .error:
-            return true
+            return false
         }
-        
-        
-//        if type.asciiValue != SocketFrame.SocketFrameType.read.rawValue {
-//            return false
-//        }
-//        return true
     }
 }

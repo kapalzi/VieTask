@@ -8,12 +8,12 @@
 
 import Foundation
 
-class ReadPresenter {
+class ReadPresenter: BasePresenter<SocketApiProvider> {
     
     func readMessage(completion: @escaping stringSuccessCompletion) {
         
         DispatchQueue.global().async {
-            SocketController.shared.readMessage(completion: completion)
+            self.api.readMessage(completion: completion)
         }
     }
 }

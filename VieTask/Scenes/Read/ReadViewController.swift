@@ -11,14 +11,8 @@ import UIKit
 
 class ReadViewController: BaseViewController {
     
-    var presenter: ReadPresenter!
+    var presenter: ReadPresenter = ReadPresenter(api: SocketController.shared)
     @IBOutlet var messageTextView: UITextView!
-    
-    override func viewDidLoad() {
-        
-        super.viewDidLoad()
-        self.presenter = ReadPresenter()
-    }
     
     @IBAction func receiveMessageBtnDidTap(_ sender: UIButton) {
         
