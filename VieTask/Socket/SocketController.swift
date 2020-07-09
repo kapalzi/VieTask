@@ -48,7 +48,6 @@ final class SocketController: SocketApiProvider {
     func disconnect() {
         
         self.socket?.close()
-        print("Disconnected")
     }
     
     func sendMessage(_ message: String, completion: @escaping stringSuccessCompletion) {
